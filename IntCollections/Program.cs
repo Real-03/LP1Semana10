@@ -7,9 +7,9 @@ namespace IntCollections
         private static void Main(string[] args)
         {
             List<int> lista = new List<int>();
-        Stack<int> pilha = new Stack<int>();
-        Queue<int> fila = new Queue<int>();
-        HashSet<int> conjunto = new HashSet<int>();
+            Stack<int> pilha = new Stack<int>();
+            Queue<int> fila = new Queue<int>();
+            HashSet<int> conjunto = new HashSet<int>();
 
         // Valores a inserir
         int[] valores = { 1, 10, -30, 10, -5 };

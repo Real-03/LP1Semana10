@@ -1,0 +1,26 @@
+public class Player
+{
+    public PlayerClass PClass {get;}
+    public string Name {get;}
+    public Player (PlayerClass pClass, string Name)
+    {
+        PClass = pClass;
+        Name = nameof;
+    }
+
+
+    public override int GetHashCode()
+    {
+        return PClass.GetHashCode()^Name.GetHashCode();
+    }
+    
+    public bool Equals(object other)
+    {
+        Player otherPlayer = other as Player;
+        if(otherPlayer is !null &&otherPlayer.Name== Name && otherPlayer.PClass == PClass)
+            return true;
+        else
+            return false;
+    }
+
+}
