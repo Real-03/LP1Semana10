@@ -23,26 +23,11 @@ namespace IntCollections
             conjunto.Add(valor); // HashSet ignora duplicados automaticamente
         }
 
-        // Impressão com foreach
-        Console.WriteLine("List:");
-        foreach (int v in lista)
-            Console.Write(v + " ");
-        Console.WriteLine("\n");
-
-        Console.WriteLine("Stack:");
-        foreach (int v in pilha)
-            Console.Write(v + " ");
-        Console.WriteLine("\n");
-
-        Console.WriteLine("Queue:");
-        foreach (int v in fila)
-            Console.Write(v + " ");
-        Console.WriteLine("\n");
-
-        Console.WriteLine("HashSet:");
-        foreach (int v in conjunto)
-            Console.Write(v + " ");
-        Console.WriteLine("\n");
+        // Impressão
+        Console.WriteLine("List: " + string.Join(", ", lista));
+        Console.WriteLine("Stack: " + string.Join(", ", pilha));
+        Console.WriteLine("Queue: " + string.Join(", ", fila));
+        Console.WriteLine("HashSet: " + string.Join(", ", conjunto));
         }
     }
 }
