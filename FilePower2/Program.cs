@@ -7,16 +7,12 @@ namespace FilePower2
     {
         private static void Main(string[] args)
         {
-            string text = "";
-            using StreamWriter sw = new StreamWriter (args[0])  ;
-            do
+            using StreamWriter sw = new StreamWriter(args[0]);
+            string text;
+            while (!string.IsNullOrEmpty(text = Console.ReadLine()))
             {
-                
-                text = Console.ReadLine();
-                if(text!="")
-                    sw.WriteLine(text);
-
-            }while(text != "");
+                sw.WriteLine(text);
+            }
 
 
         }
